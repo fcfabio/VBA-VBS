@@ -27,3 +27,16 @@ The ReplaceSpecialCharacters function removes special characters from a string. 
 
 ### Reference:
 [Microsoft Community](https://answers.microsoft.com/en-us/msoffice/forum/all/removing-special-characters-with-regular/d62d50b7-8586-4f08-ac7d-c5212929074a)
+
+
+## FileManagementFunctions
+This file contains a set of functions for files and folders management in Windows.
+
+The functions included are:
+
+- `checkFolder`: This function receives a path as input and checks if a folder exists in that path. If the folder does not exist, it creates it.<br>
+- `createTXT`: This function receives a path as input and creates a text file at that location, if the file does not already exist.<br>
+- `CleanTXT`: This function receives a file path as input and deletes the file at that location. It then calls the `createTXT` function to create a new, empty file at the same location.<br>
+- `OpenFolder`: This function receives a folder path as input and opens the folder.<br>
+- `SearchFolder`: This function receives a file name as input and searches for the file in the subfolders of the "C:\Temp" folder. If the file is found, it returns the file's path.
+
