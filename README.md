@@ -11,6 +11,18 @@ The DrawCircle function is used to draw a circle in a Microsoft Word document. T
 The function takes no input arguments, however it can be changed to receive as input the text, color, or other desired properties. When called, it will create a circle with the specified text, font color, line weight, dash style, style, transparency, and fore and back colors in the current Microsoft Word document.
 
 
+## FileManagementFunctions
+This file contains a set of functions for files and folders management in Windows.
+
+The functions included are:
+
+- `checkFolder`: This function receives a path as input and checks if a folder exists in that path. If the folder does not exist, it creates it.<br>
+- `createTXT`: This function receives a path as input and creates a text file at that location, if the file does not already exist.<br>
+- `CleanTXT`: This function receives a file path as input and deletes the file at that location. It then calls the `createTXT` function to create a new, empty file at the same location.<br>
+- `OpenFolder`: This function receives a folder path as input and opens the folder.<br>
+- `SearchFolder`: This function receives a file name as input and searches for the file in the subfolders of the "C:\Temp" folder. If the file is found, it returns the file's path.
+
+
 ## LevenshteinDistance:
 This function calculates the Levenshtein distance between two strings. The Levenshtein distance is a measure of the similarity between two strings, defined as the minimum number of single-character edits (insertions, deletions or substitutions) required to change one string into the other.
 
@@ -29,14 +41,9 @@ The ReplaceSpecialCharacters function removes special characters from a string. 
 [Microsoft Community](https://answers.microsoft.com/en-us/msoffice/forum/all/removing-special-characters-with-regular/d62d50b7-8586-4f08-ac7d-c5212929074a)
 
 
-## FileManagementFunctions
-This file contains a set of functions for files and folders management in Windows.
+## Windows Shell Functions
+This file contains some functions to perform tasks using Windows Shell.
 
-The functions included are:
-
-- `checkFolder`: This function receives a path as input and checks if a folder exists in that path. If the folder does not exist, it creates it.<br>
-- `createTXT`: This function receives a path as input and creates a text file at that location, if the file does not already exist.<br>
-- `CleanTXT`: This function receives a file path as input and deletes the file at that location. It then calls the `createTXT` function to create a new, empty file at the same location.<br>
-- `OpenFolder`: This function receives a folder path as input and opens the folder.<br>
-- `SearchFolder`: This function receives a file name as input and searches for the file in the subfolders of the "C:\Temp" folder. If the file is found, it returns the file's path.
+### GetCurrentUsername
+A simple function to retrieve the current user's username.
 
