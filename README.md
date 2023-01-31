@@ -34,6 +34,46 @@ The function will return an integer representing the Levenshtein distance betwee
 ### Reference:
 [StackOverflow](https://stackoverflow.com/questions/4243036/levenshtein-distance-in-vba)
 
+
+
+## MS Outlook Functions
+
+This file contains code to interact with MS Outlook.
+
+### ScheduleOutlookTask
+
+#### Usage
+The function has the following parameters:
+- `recipient`: The email address of the task recipient.
+- `subject`: The subject of the task.
+- `body`: The text of the body of the task.
+- `startDate`: The start date of the task.
+- `reminderSet`: A Boolean value indicating whether a reminder is set for the task.
+
+#### Example
+`ScheduleOutlookTask "example@example.com", "Task Subject", "Task Body", "01/01/2023", True`
+
+
+### SendOutlookEmail
+
+This function allows you to send emails through MS Outlook from a VBScript.
+
+#### Usage
+The function has the following parameters:
+
+- `recipient`: A string containing the email addresses of the recipients, separated by semi-colons (e.g. "recipient1@example.com;recipient2@example.com").
+- `subject`: A string containing the subject of the email.
+- `body`: A string containing the body of the email. Can contain HTML code for formatting.
+- `cc`: A string containing the email addresses of the recipients that will be in copy, separated by semi-colons (e.g. "cc1@example.com;cc2@example.com").
+- `bcc`: A string containing the email addresses of the recipients that will be blind copied, separated by semi-colons (e.g. "bcc1@example.com;bcc2@example.com").
+- `priority`: An integer representing the priority of the email. 0 = Low, 1 = Normal, 2 = High.
+- `attachments`: A string containing the paths of the files to be attached to the email, separated by semi-colons (e.g. "C:\file1.pdf;C:\file2.pdf").
+
+#### Requirements
+MS Outlook must be installed on the computer running the script.
+The script must be executed with sufficient permissions to access MS Outlook.
+
+
 ## ReplaceSpecialCharacters
 The ReplaceSpecialCharacters function removes special characters from a string. It takes in a single string as an input and returns a string with all the special characters removed. The function uses a loop to iterate through each character in the input string, and if the character is not a letter or a number, it is replaced with a blank space.
 
